@@ -16,13 +16,11 @@ return: string
 
 */
 
-
 function printerError(s: string): string {
-  let sArr = s.length;
-  let errorRate = s.replace(/[a-m]/g,"").length
- 
- 
- return `${errorRate}/${sArr}`;
-}
-export default printerError;
+  const sArr = s.length;
+  const errorRate = s.replace(/[a-m]/g, "").length;
 
+  return `${errorRate}/${sArr}`;
+}
+
+export default printerError;
