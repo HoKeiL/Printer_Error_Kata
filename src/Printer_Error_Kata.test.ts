@@ -1,10 +1,11 @@
-import sum from "./skeleton";
+import printerError from "./Printer_Error_Kata";
 
 test("sum adds two numbers", () => {
-  expect(sum(4, 3)).toBe(7);
+  expect(printerError("aaabbbbhaijjjm")).toBe("0/14");
 });
 
 
 test("sum adds two numbers cancelling", () => {
-  expect(sum(-4, 4)).toBe(0);
+  expect(printerError("aaaxbbbbyyhwawiwjjjwwm")).toBe("8/22");
 });
+
